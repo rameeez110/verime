@@ -3,10 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18470C9D24A8C29A004B52B1 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18470C9A24A8C29A004B52B1 /* Comfortaa-Bold.ttf */; };
+		18470C9E24A8C29A004B52B1 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18470C9B24A8C29A004B52B1 /* Comfortaa-Regular.ttf */; };
+		18470C9F24A8C29A004B52B1 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18470C9C24A8C29A004B52B1 /* Comfortaa-Light.ttf */; };
+		18470CA224A8C5DD004B52B1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18470CA124A8C5DD004B52B1 /* Register.storyboard */; };
+		18470CA424A8C7F4004B52B1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CA324A8C7F4004B52B1 /* Extensions.swift */; };
+		18470CA624A8C80D004B52B1 /* CommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CA524A8C80D004B52B1 /* CommonClass.swift */; };
+		18470CA824A8CF13004B52B1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CA724A8CF13004B52B1 /* SignInViewController.swift */; };
+		18470CAA24A8CF1F004B52B1 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CA924A8CF1F004B52B1 /* SingUpViewController.swift */; };
+		18470CAC24A8EC55004B52B1 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CAB24A8EC55004B52B1 /* ForgetPasswordViewController.swift */; };
 		18C044A324A88A8300E9A278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044A224A88A8300E9A278 /* AppDelegate.swift */; };
 		18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044A424A88A8300E9A278 /* SceneDelegate.swift */; };
 		18C044A724A88A8300E9A278 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044A624A88A8300E9A278 /* ViewController.swift */; };
@@ -15,6 +24,9 @@
 		18C044AF24A88A8500E9A278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C044AD24A88A8500E9A278 /* LaunchScreen.storyboard */; };
 		18C044BA24A88A8500E9A278 /* veriMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044B924A88A8500E9A278 /* veriMeTests.swift */; };
 		18C044C524A88A8500E9A278 /* veriMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044C424A88A8500E9A278 /* veriMeUITests.swift */; };
+		524350DCC75153B6E921F53D /* Pods_veriMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3666DD647DDE10B75D3F77 /* Pods_veriMeTests.framework */; };
+		5737E3F42B48CD59DE953F11 /* Pods_veriMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E8B09EB45CFDFB9B9755C /* Pods_veriMe.framework */; };
+		97EEBACAF97B4BCCE793FF5F /* Pods_veriMe_veriMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2144407806D2570D3072A20 /* Pods_veriMe_veriMeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18470C9A24A8C29A004B52B1 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		18470C9B24A8C29A004B52B1 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		18470C9C24A8C29A004B52B1 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		18470CA124A8C5DD004B52B1 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		18470CA324A8C7F4004B52B1 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		18470CA524A8C80D004B52B1 /* CommonClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonClass.swift; sourceTree = "<group>"; };
+		18470CA724A8CF13004B52B1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		18470CA924A8CF1F004B52B1 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
+		18470CAB24A8EC55004B52B1 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 		18C0449F24A88A8300E9A278 /* veriMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veriMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C044A224A88A8300E9A278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C044A424A88A8300E9A278 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +70,15 @@
 		18C044C024A88A8500E9A278 /* veriMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = veriMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C044C424A88A8500E9A278 /* veriMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veriMeUITests.swift; sourceTree = "<group>"; };
 		18C044C624A88A8500E9A278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D3666DD647DDE10B75D3F77 /* Pods_veriMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veriMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60318DCB9F2A201E46883F35 /* Pods-veriMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriMe.debug.xcconfig"; path = "Target Support Files/Pods-veriMe/Pods-veriMe.debug.xcconfig"; sourceTree = "<group>"; };
+		6155C75F7142B0EB041A5A0A /* Pods-veriMe-veriMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriMe-veriMeUITests.release.xcconfig"; path = "Target Support Files/Pods-veriMe-veriMeUITests/Pods-veriMe-veriMeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D5E8B09EB45CFDFB9B9755C /* Pods_veriMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veriMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		881A12856BA0EDE851B1DDCA /* Pods-veriMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriMeTests.debug.xcconfig"; path = "Target Support Files/Pods-veriMeTests/Pods-veriMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E670608D73642ECA65F852D /* Pods-veriMe-veriMeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriMe-veriMeUITests.debug.xcconfig"; path = "Target Support Files/Pods-veriMe-veriMeUITests/Pods-veriMe-veriMeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A65E2DDB15DD849ACC744166 /* Pods-veriMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriMeTests.release.xcconfig"; path = "Target Support Files/Pods-veriMeTests/Pods-veriMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B2144407806D2570D3072A20 /* Pods_veriMe_veriMeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veriMe_veriMeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B4505BF3B0D98973F99CC3 /* Pods-veriMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriMe.release.xcconfig"; path = "Target Support Files/Pods-veriMe/Pods-veriMe.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5737E3F42B48CD59DE953F11 /* Pods_veriMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				524350DCC75153B6E921F53D /* Pods_veriMeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +102,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97EEBACAF97B4BCCE793FF5F /* Pods_veriMe_veriMeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18470C9624A8C251004B52B1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18470CAD24A8EC5A004B52B1 /* RegisterVcs */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		18470C9724A8C25C004B52B1 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		18470C9824A8C26C004B52B1 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				18470CA324A8C7F4004B52B1 /* Extensions.swift */,
+				18470CA524A8C80D004B52B1 /* CommonClass.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		18470C9924A8C277004B52B1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				18470C9A24A8C29A004B52B1 /* Comfortaa-Bold.ttf */,
+				18470C9C24A8C29A004B52B1 /* Comfortaa-Light.ttf */,
+				18470C9B24A8C29A004B52B1 /* Comfortaa-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		18470CA024A8C597004B52B1 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				18C044A824A88A8300E9A278 /* Main.storyboard */,
+				18C044AD24A88A8500E9A278 /* LaunchScreen.storyboard */,
+				18470CA124A8C5DD004B52B1 /* Register.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		18470CAD24A8EC5A004B52B1 /* RegisterVcs */ = {
+			isa = PBXGroup;
+			children = (
+				18C044A624A88A8300E9A278 /* ViewController.swift */,
+				18470CA724A8CF13004B52B1 /* SignInViewController.swift */,
+				18470CA924A8CF1F004B52B1 /* SingUpViewController.swift */,
+				18470CAB24A8EC55004B52B1 /* ForgetPasswordViewController.swift */,
+			);
+			path = RegisterVcs;
+			sourceTree = "<group>";
+		};
 		18C0449624A88A8300E9A278 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +171,8 @@
 				18C044B824A88A8500E9A278 /* veriMeTests */,
 				18C044C324A88A8500E9A278 /* veriMeUITests */,
 				18C044A024A88A8300E9A278 /* Products */,
+				6DE91C90A213F8EDF33CED38 /* Pods */,
+				5AF843F0C5F91C441E6A105C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +189,14 @@
 		18C044A124A88A8300E9A278 /* veriMe */ = {
 			isa = PBXGroup;
 			children = (
+				18470CA024A8C597004B52B1 /* StoryBoards */,
+				18470C9924A8C277004B52B1 /* Fonts */,
+				18470C9824A8C26C004B52B1 /* Utilities */,
+				18470C9724A8C25C004B52B1 /* CustomCells */,
+				18470C9624A8C251004B52B1 /* ViewControllers */,
 				18C044A224A88A8300E9A278 /* AppDelegate.swift */,
 				18C044A424A88A8300E9A278 /* SceneDelegate.swift */,
-				18C044A624A88A8300E9A278 /* ViewController.swift */,
-				18C044A824A88A8300E9A278 /* Main.storyboard */,
 				18C044AB24A88A8500E9A278 /* Assets.xcassets */,
-				18C044AD24A88A8500E9A278 /* LaunchScreen.storyboard */,
 				18C044B024A88A8500E9A278 /* Info.plist */,
 			);
 			path = veriMe;
@@ -128,6 +220,29 @@
 			path = veriMeUITests;
 			sourceTree = "<group>";
 		};
+		5AF843F0C5F91C441E6A105C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D5E8B09EB45CFDFB9B9755C /* Pods_veriMe.framework */,
+				B2144407806D2570D3072A20 /* Pods_veriMe_veriMeUITests.framework */,
+				5D3666DD647DDE10B75D3F77 /* Pods_veriMeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DE91C90A213F8EDF33CED38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60318DCB9F2A201E46883F35 /* Pods-veriMe.debug.xcconfig */,
+				B9B4505BF3B0D98973F99CC3 /* Pods-veriMe.release.xcconfig */,
+				9E670608D73642ECA65F852D /* Pods-veriMe-veriMeUITests.debug.xcconfig */,
+				6155C75F7142B0EB041A5A0A /* Pods-veriMe-veriMeUITests.release.xcconfig */,
+				881A12856BA0EDE851B1DDCA /* Pods-veriMeTests.debug.xcconfig */,
+				A65E2DDB15DD849ACC744166 /* Pods-veriMeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +250,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C044C924A88A8500E9A278 /* Build configuration list for PBXNativeTarget "veriMe" */;
 			buildPhases = (
+				3B75BB023EC1290C0E272D17 /* [CP] Check Pods Manifest.lock */,
 				18C0449B24A88A8300E9A278 /* Sources */,
 				18C0449C24A88A8300E9A278 /* Frameworks */,
 				18C0449D24A88A8300E9A278 /* Resources */,
+				AF9DA1E2CE6912CF967B70A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C044CC24A88A8500E9A278 /* Build configuration list for PBXNativeTarget "veriMeTests" */;
 			buildPhases = (
+				BD99A3F9415915F38EA401F2 /* [CP] Check Pods Manifest.lock */,
 				18C044B124A88A8500E9A278 /* Sources */,
 				18C044B224A88A8500E9A278 /* Frameworks */,
 				18C044B324A88A8500E9A278 /* Resources */,
@@ -170,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18C044CF24A88A8500E9A278 /* Build configuration list for PBXNativeTarget "veriMeUITests" */;
 			buildPhases = (
+				A58631C4FFBB0E6EDEB71DA2 /* [CP] Check Pods Manifest.lock */,
 				18C044BC24A88A8500E9A278 /* Sources */,
 				18C044BD24A88A8500E9A278 /* Frameworks */,
 				18C044BE24A88A8500E9A278 /* Resources */,
+				7C1E6A3F1C9C6C084D2BB94C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +352,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18470C9D24A8C29A004B52B1 /* Comfortaa-Bold.ttf in Resources */,
 				18C044AF24A88A8500E9A278 /* LaunchScreen.storyboard in Resources */,
+				18470CA224A8C5DD004B52B1 /* Register.storyboard in Resources */,
 				18C044AC24A88A8500E9A278 /* Assets.xcassets in Resources */,
+				18470C9E24A8C29A004B52B1 /* Comfortaa-Regular.ttf in Resources */,
+				18470C9F24A8C29A004B52B1 /* Comfortaa-Light.ttf in Resources */,
 				18C044AA24A88A8300E9A278 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +378,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3B75BB023EC1290C0E272D17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-veriMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C1E6A3F1C9C6C084D2BB94C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-veriMe-veriMeUITests/Pods-veriMe-veriMeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-veriMe-veriMeUITests/Pods-veriMe-veriMeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-veriMe-veriMeUITests/Pods-veriMe-veriMeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A58631C4FFBB0E6EDEB71DA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-veriMe-veriMeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF9DA1E2CE6912CF967B70A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-veriMe/Pods-veriMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-veriMe/Pods-veriMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-veriMe/Pods-veriMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD99A3F9415915F38EA401F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-veriMeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18C0449B24A88A8300E9A278 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18470CA624A8C80D004B52B1 /* CommonClass.swift in Sources */,
+				18470CAA24A8CF1F004B52B1 /* SingUpViewController.swift in Sources */,
 				18C044A724A88A8300E9A278 /* ViewController.swift in Sources */,
+				18470CA824A8CF13004B52B1 /* SignInViewController.swift in Sources */,
 				18C044A324A88A8300E9A278 /* AppDelegate.swift in Sources */,
 				18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */,
+				18470CAC24A8EC55004B52B1 /* ForgetPasswordViewController.swift in Sources */,
+				18470CA424A8C7F4004B52B1 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +664,7 @@
 		};
 		18C044CA24A88A8500E9A278 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60318DCB9F2A201E46883F35 /* Pods-veriMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +683,7 @@
 		};
 		18C044CB24A88A8500E9A278 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9B4505BF3B0D98973F99CC3 /* Pods-veriMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +702,7 @@
 		};
 		18C044CD24A88A8500E9A278 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881A12856BA0EDE851B1DDCA /* Pods-veriMeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +725,7 @@
 		};
 		18C044CE24A88A8500E9A278 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A65E2DDB15DD849ACC744166 /* Pods-veriMeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +748,7 @@
 		};
 		18C044D024A88A8500E9A278 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E670608D73642ECA65F852D /* Pods-veriMe-veriMeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +769,7 @@
 		};
 		18C044D124A88A8500E9A278 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6155C75F7142B0EB041A5A0A /* Pods-veriMe-veriMeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
