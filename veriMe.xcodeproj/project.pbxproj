@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18C044A324A88A8300E9A278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044A224A88A8300E9A278 /* AppDelegate.swift */; };
+		18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044A424A88A8300E9A278 /* SceneDelegate.swift */; };
+		18C044A724A88A8300E9A278 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044A624A88A8300E9A278 /* ViewController.swift */; };
+		18C044AA24A88A8300E9A278 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C044A824A88A8300E9A278 /* Main.storyboard */; };
+		18C044AC24A88A8500E9A278 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C044AB24A88A8500E9A278 /* Assets.xcassets */; };
+		18C044AF24A88A8500E9A278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C044AD24A88A8500E9A278 /* LaunchScreen.storyboard */; };
+		18C044BA24A88A8500E9A278 /* veriMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044B924A88A8500E9A278 /* veriMeTests.swift */; };
+		18C044C524A88A8500E9A278 /* veriMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044C424A88A8500E9A278 /* veriMeUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18C044B624A88A8500E9A278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C0449724A88A8300E9A278 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C0449E24A88A8300E9A278;
+			remoteInfo = veriMe;
+		};
+		18C044C124A88A8500E9A278 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18C0449724A88A8300E9A278 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18C0449E24A88A8300E9A278;
+			remoteInfo = veriMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18C0449F24A88A8300E9A278 /* veriMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veriMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C044A224A88A8300E9A278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18C044A424A88A8300E9A278 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18C044A624A88A8300E9A278 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18C044A924A88A8300E9A278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18C044AB24A88A8500E9A278 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18C044AE24A88A8500E9A278 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18C044B024A88A8500E9A278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C044B524A88A8500E9A278 /* veriMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = veriMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C044B924A88A8500E9A278 /* veriMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veriMeTests.swift; sourceTree = "<group>"; };
+		18C044BB24A88A8500E9A278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18C044C024A88A8500E9A278 /* veriMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = veriMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18C044C424A88A8500E9A278 /* veriMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veriMeUITests.swift; sourceTree = "<group>"; };
+		18C044C624A88A8500E9A278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18C0449C24A88A8300E9A278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C044B224A88A8500E9A278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C044BD24A88A8500E9A278 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18C0449624A88A8300E9A278 = {
+			isa = PBXGroup;
+			children = (
+				18C044A124A88A8300E9A278 /* veriMe */,
+				18C044B824A88A8500E9A278 /* veriMeTests */,
+				18C044C324A88A8500E9A278 /* veriMeUITests */,
+				18C044A024A88A8300E9A278 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18C044A024A88A8300E9A278 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18C0449F24A88A8300E9A278 /* veriMe.app */,
+				18C044B524A88A8500E9A278 /* veriMeTests.xctest */,
+				18C044C024A88A8500E9A278 /* veriMeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18C044A124A88A8300E9A278 /* veriMe */ = {
+			isa = PBXGroup;
+			children = (
+				18C044A224A88A8300E9A278 /* AppDelegate.swift */,
+				18C044A424A88A8300E9A278 /* SceneDelegate.swift */,
+				18C044A624A88A8300E9A278 /* ViewController.swift */,
+				18C044A824A88A8300E9A278 /* Main.storyboard */,
+				18C044AB24A88A8500E9A278 /* Assets.xcassets */,
+				18C044AD24A88A8500E9A278 /* LaunchScreen.storyboard */,
+				18C044B024A88A8500E9A278 /* Info.plist */,
+			);
+			path = veriMe;
+			sourceTree = "<group>";
+		};
+		18C044B824A88A8500E9A278 /* veriMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				18C044B924A88A8500E9A278 /* veriMeTests.swift */,
+				18C044BB24A88A8500E9A278 /* Info.plist */,
+			);
+			path = veriMeTests;
+			sourceTree = "<group>";
+		};
+		18C044C324A88A8500E9A278 /* veriMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18C044C424A88A8500E9A278 /* veriMeUITests.swift */,
+				18C044C624A88A8500E9A278 /* Info.plist */,
+			);
+			path = veriMeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18C0449E24A88A8300E9A278 /* veriMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C044C924A88A8500E9A278 /* Build configuration list for PBXNativeTarget "veriMe" */;
+			buildPhases = (
+				18C0449B24A88A8300E9A278 /* Sources */,
+				18C0449C24A88A8300E9A278 /* Frameworks */,
+				18C0449D24A88A8300E9A278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = veriMe;
+			productName = veriMe;
+			productReference = 18C0449F24A88A8300E9A278 /* veriMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18C044B424A88A8500E9A278 /* veriMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C044CC24A88A8500E9A278 /* Build configuration list for PBXNativeTarget "veriMeTests" */;
+			buildPhases = (
+				18C044B124A88A8500E9A278 /* Sources */,
+				18C044B224A88A8500E9A278 /* Frameworks */,
+				18C044B324A88A8500E9A278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C044B724A88A8500E9A278 /* PBXTargetDependency */,
+			);
+			name = veriMeTests;
+			productName = veriMeTests;
+			productReference = 18C044B524A88A8500E9A278 /* veriMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18C044BF24A88A8500E9A278 /* veriMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18C044CF24A88A8500E9A278 /* Build configuration list for PBXNativeTarget "veriMeUITests" */;
+			buildPhases = (
+				18C044BC24A88A8500E9A278 /* Sources */,
+				18C044BD24A88A8500E9A278 /* Frameworks */,
+				18C044BE24A88A8500E9A278 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18C044C224A88A8500E9A278 /* PBXTargetDependency */,
+			);
+			name = veriMeUITests;
+			productName = veriMeUITests;
+			productReference = 18C044C024A88A8500E9A278 /* veriMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18C0449724A88A8300E9A278 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Rameez Hasan";
+				TargetAttributes = {
+					18C0449E24A88A8300E9A278 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					18C044B424A88A8500E9A278 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 18C0449E24A88A8300E9A278;
+					};
+					18C044BF24A88A8500E9A278 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 18C0449E24A88A8300E9A278;
+					};
+				};
+			};
+			buildConfigurationList = 18C0449A24A88A8300E9A278 /* Build configuration list for PBXProject "veriMe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18C0449624A88A8300E9A278;
+			productRefGroup = 18C044A024A88A8300E9A278 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18C0449E24A88A8300E9A278 /* veriMe */,
+				18C044B424A88A8500E9A278 /* veriMeTests */,
+				18C044BF24A88A8500E9A278 /* veriMeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18C0449D24A88A8300E9A278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C044AF24A88A8500E9A278 /* LaunchScreen.storyboard in Resources */,
+				18C044AC24A88A8500E9A278 /* Assets.xcassets in Resources */,
+				18C044AA24A88A8300E9A278 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C044B324A88A8500E9A278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C044BE24A88A8500E9A278 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18C0449B24A88A8300E9A278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C044A724A88A8300E9A278 /* ViewController.swift in Sources */,
+				18C044A324A88A8300E9A278 /* AppDelegate.swift in Sources */,
+				18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C044B124A88A8500E9A278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C044BA24A88A8500E9A278 /* veriMeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18C044BC24A88A8500E9A278 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18C044C524A88A8500E9A278 /* veriMeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18C044B724A88A8500E9A278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C0449E24A88A8300E9A278 /* veriMe */;
+			targetProxy = 18C044B624A88A8500E9A278 /* PBXContainerItemProxy */;
+		};
+		18C044C224A88A8500E9A278 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18C0449E24A88A8300E9A278 /* veriMe */;
+			targetProxy = 18C044C124A88A8500E9A278 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18C044A824A88A8300E9A278 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C044A924A88A8300E9A278 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18C044AD24A88A8500E9A278 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18C044AE24A88A8500E9A278 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18C044C724A88A8500E9A278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18C044C824A88A8500E9A278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18C044CA24A88A8500E9A278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UU43EFY9UW;
+				INFOPLIST_FILE = veriMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.veriMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18C044CB24A88A8500E9A278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UU43EFY9UW;
+				INFOPLIST_FILE = veriMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.veriMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18C044CD24A88A8500E9A278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UU43EFY9UW;
+				INFOPLIST_FILE = veriMeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.veriMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/veriMe.app/veriMe";
+			};
+			name = Debug;
+		};
+		18C044CE24A88A8500E9A278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UU43EFY9UW;
+				INFOPLIST_FILE = veriMeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.veriMeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/veriMe.app/veriMe";
+			};
+			name = Release;
+		};
+		18C044D024A88A8500E9A278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UU43EFY9UW;
+				INFOPLIST_FILE = veriMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.veriMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = veriMe;
+			};
+			name = Debug;
+		};
+		18C044D124A88A8500E9A278 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UU43EFY9UW;
+				INFOPLIST_FILE = veriMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.veriMeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = veriMe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18C0449A24A88A8300E9A278 /* Build configuration list for PBXProject "veriMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C044C724A88A8500E9A278 /* Debug */,
+				18C044C824A88A8500E9A278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C044C924A88A8500E9A278 /* Build configuration list for PBXNativeTarget "veriMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C044CA24A88A8500E9A278 /* Debug */,
+				18C044CB24A88A8500E9A278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C044CC24A88A8500E9A278 /* Build configuration list for PBXNativeTarget "veriMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C044CD24A88A8500E9A278 /* Debug */,
+				18C044CE24A88A8500E9A278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18C044CF24A88A8500E9A278 /* Build configuration list for PBXNativeTarget "veriMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18C044D024A88A8500E9A278 /* Debug */,
+				18C044D124A88A8500E9A278 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18C0449724A88A8300E9A278 /* Project object */;
+}
