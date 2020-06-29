@@ -9,5 +9,9 @@
 import UIKit
 
 class CommonClass: NSObject {
-
+    
+    static var sharedInstance = CommonClass()
+    
+    //Side Menu
+    var leftDrawerTransition:DrawerTransition!
 }

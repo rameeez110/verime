@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182A435424A9D775009D1E54 /* DrawerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A435324A9D775009D1E54 /* DrawerTransition.swift */; };
+		182A435724A9DFFA009D1E54 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A435624A9DFFA009D1E54 /* HomeViewController.swift */; };
+		182A435924A9E004009D1E54 /* RefrencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A435824A9E004009D1E54 /* RefrencesViewController.swift */; };
+		182A435B24A9E00F009D1E54 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A435A24A9E00F009D1E54 /* ProfileViewController.swift */; };
+		182A435D24A9E01A009D1E54 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A435C24A9E01A009D1E54 /* SettingsViewController.swift */; };
+		182A435F24A9E024009D1E54 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A435E24A9E024009D1E54 /* SideMenuViewController.swift */; };
 		18470C9D24A8C29A004B52B1 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18470C9A24A8C29A004B52B1 /* Comfortaa-Bold.ttf */; };
 		18470C9E24A8C29A004B52B1 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18470C9B24A8C29A004B52B1 /* Comfortaa-Regular.ttf */; };
 		18470C9F24A8C29A004B52B1 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18470C9C24A8C29A004B52B1 /* Comfortaa-Light.ttf */; };
@@ -47,6 +53,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		182A435324A9D775009D1E54 /* DrawerTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerTransition.swift; sourceTree = "<group>"; };
+		182A435624A9DFFA009D1E54 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		182A435824A9E004009D1E54 /* RefrencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefrencesViewController.swift; sourceTree = "<group>"; };
+		182A435A24A9E00F009D1E54 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		182A435C24A9E01A009D1E54 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		182A435E24A9E024009D1E54 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		18470C9A24A8C29A004B52B1 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		18470C9B24A8C29A004B52B1 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		18470C9C24A8C29A004B52B1 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
@@ -109,9 +121,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		182A435524A9DFE8009D1E54 /* TabbarVcs */ = {
+			isa = PBXGroup;
+			children = (
+				182A435624A9DFFA009D1E54 /* HomeViewController.swift */,
+				182A435824A9E004009D1E54 /* RefrencesViewController.swift */,
+				182A435A24A9E00F009D1E54 /* ProfileViewController.swift */,
+				182A435C24A9E01A009D1E54 /* SettingsViewController.swift */,
+				182A435E24A9E024009D1E54 /* SideMenuViewController.swift */,
+			);
+			path = TabbarVcs;
+			sourceTree = "<group>";
+		};
 		18470C9624A8C251004B52B1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				182A435524A9DFE8009D1E54 /* TabbarVcs */,
 				18470CAD24A8EC5A004B52B1 /* RegisterVcs */,
 			);
 			path = ViewControllers;
@@ -129,6 +154,7 @@
 			children = (
 				18470CA324A8C7F4004B52B1 /* Extensions.swift */,
 				18470CA524A8C80D004B52B1 /* CommonClass.swift */,
+				182A435324A9D775009D1E54 /* DrawerTransition.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -490,9 +516,15 @@
 				18470CAA24A8CF1F004B52B1 /* SingUpViewController.swift in Sources */,
 				18C044A724A88A8300E9A278 /* ViewController.swift in Sources */,
 				18470CA824A8CF13004B52B1 /* SignInViewController.swift in Sources */,
+				182A435F24A9E024009D1E54 /* SideMenuViewController.swift in Sources */,
+				182A435924A9E004009D1E54 /* RefrencesViewController.swift in Sources */,
 				18C044A324A88A8300E9A278 /* AppDelegate.swift in Sources */,
+				182A435B24A9E00F009D1E54 /* ProfileViewController.swift in Sources */,
+				182A435724A9DFFA009D1E54 /* HomeViewController.swift in Sources */,
 				18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */,
 				18470CAC24A8EC55004B52B1 /* ForgetPasswordViewController.swift in Sources */,
+				182A435D24A9E01A009D1E54 /* SettingsViewController.swift in Sources */,
+				182A435424A9D775009D1E54 /* DrawerTransition.swift in Sources */,
 				18470CA424A8C7F4004B52B1 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
