@@ -13,6 +13,10 @@
 		182A435B24A9E00F009D1E54 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A435A24A9E00F009D1E54 /* ProfileViewController.swift */; };
 		182A435D24A9E01A009D1E54 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A435C24A9E01A009D1E54 /* SettingsViewController.swift */; };
 		182A435F24A9E024009D1E54 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182A435E24A9E024009D1E54 /* SideMenuViewController.swift */; };
+		1831E00624AB52830081156F /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831E00424AB52830081156F /* SettingsTableViewCell.swift */; };
+		1831E00724AB52830081156F /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1831E00524AB52830081156F /* SettingsTableViewCell.xib */; };
+		1831E00A24AB6BB80081156F /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831E00924AB6BB80081156F /* ContactUsViewController.swift */; };
+		1831E00C24AB6BC20081156F /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1831E00B24AB6BC20081156F /* AboutUsViewController.swift */; };
 		18470C9D24A8C29A004B52B1 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18470C9A24A8C29A004B52B1 /* Comfortaa-Bold.ttf */; };
 		18470C9E24A8C29A004B52B1 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18470C9B24A8C29A004B52B1 /* Comfortaa-Regular.ttf */; };
 		18470C9F24A8C29A004B52B1 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18470C9C24A8C29A004B52B1 /* Comfortaa-Light.ttf */; };
@@ -22,6 +26,8 @@
 		18470CA824A8CF13004B52B1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CA724A8CF13004B52B1 /* SignInViewController.swift */; };
 		18470CAA24A8CF1F004B52B1 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CA924A8CF1F004B52B1 /* SingUpViewController.swift */; };
 		18470CAC24A8EC55004B52B1 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CAB24A8EC55004B52B1 /* ForgetPasswordViewController.swift */; };
+		187F7E3424AB249900EDE189 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187F7E3224AB249900EDE189 /* SideMenuTableViewCell.swift */; };
+		187F7E3524AB249900EDE189 /* SideMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 187F7E3324AB249900EDE189 /* SideMenuTableViewCell.xib */; };
 		18C044A324A88A8300E9A278 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044A224A88A8300E9A278 /* AppDelegate.swift */; };
 		18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044A424A88A8300E9A278 /* SceneDelegate.swift */; };
 		18C044A724A88A8300E9A278 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044A624A88A8300E9A278 /* ViewController.swift */; };
@@ -59,6 +65,10 @@
 		182A435A24A9E00F009D1E54 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		182A435C24A9E01A009D1E54 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		182A435E24A9E024009D1E54 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		1831E00424AB52830081156F /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		1831E00524AB52830081156F /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
+		1831E00924AB6BB80081156F /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		1831E00B24AB6BC20081156F /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		18470C9A24A8C29A004B52B1 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		18470C9B24A8C29A004B52B1 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		18470C9C24A8C29A004B52B1 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
@@ -68,6 +78,8 @@
 		18470CA724A8CF13004B52B1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		18470CA924A8CF1F004B52B1 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
 		18470CAB24A8EC55004B52B1 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		187F7E3224AB249900EDE189 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		187F7E3324AB249900EDE189 /* SideMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SideMenuTableViewCell.xib; sourceTree = "<group>"; };
 		18C0449F24A88A8300E9A278 /* veriMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = veriMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C044A224A88A8300E9A278 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18C044A424A88A8300E9A278 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,9 +145,19 @@
 			path = TabbarVcs;
 			sourceTree = "<group>";
 		};
+		1831E00824AB6BA20081156F /* OtherVcs */ = {
+			isa = PBXGroup;
+			children = (
+				1831E00924AB6BB80081156F /* ContactUsViewController.swift */,
+				1831E00B24AB6BC20081156F /* AboutUsViewController.swift */,
+			);
+			path = OtherVcs;
+			sourceTree = "<group>";
+		};
 		18470C9624A8C251004B52B1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1831E00824AB6BA20081156F /* OtherVcs */,
 				182A435524A9DFE8009D1E54 /* TabbarVcs */,
 				18470CAD24A8EC5A004B52B1 /* RegisterVcs */,
 			);
@@ -145,6 +167,10 @@
 		18470C9724A8C25C004B52B1 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
+				187F7E3224AB249900EDE189 /* SideMenuTableViewCell.swift */,
+				187F7E3324AB249900EDE189 /* SideMenuTableViewCell.xib */,
+				1831E00424AB52830081156F /* SettingsTableViewCell.swift */,
+				1831E00524AB52830081156F /* SettingsTableViewCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -381,10 +407,12 @@
 				18470C9D24A8C29A004B52B1 /* Comfortaa-Bold.ttf in Resources */,
 				18C044AF24A88A8500E9A278 /* LaunchScreen.storyboard in Resources */,
 				18470CA224A8C5DD004B52B1 /* Register.storyboard in Resources */,
+				1831E00724AB52830081156F /* SettingsTableViewCell.xib in Resources */,
 				18C044AC24A88A8500E9A278 /* Assets.xcassets in Resources */,
 				18470C9E24A8C29A004B52B1 /* Comfortaa-Regular.ttf in Resources */,
 				18470C9F24A8C29A004B52B1 /* Comfortaa-Light.ttf in Resources */,
 				18C044AA24A88A8300E9A278 /* Main.storyboard in Resources */,
+				187F7E3524AB249900EDE189 /* SideMenuTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				187F7E3424AB249900EDE189 /* SideMenuTableViewCell.swift in Sources */,
 				18470CA624A8C80D004B52B1 /* CommonClass.swift in Sources */,
 				18470CAA24A8CF1F004B52B1 /* SingUpViewController.swift in Sources */,
 				18C044A724A88A8300E9A278 /* ViewController.swift in Sources */,
@@ -519,8 +548,11 @@
 				182A435F24A9E024009D1E54 /* SideMenuViewController.swift in Sources */,
 				182A435924A9E004009D1E54 /* RefrencesViewController.swift in Sources */,
 				18C044A324A88A8300E9A278 /* AppDelegate.swift in Sources */,
+				1831E00A24AB6BB80081156F /* ContactUsViewController.swift in Sources */,
 				182A435B24A9E00F009D1E54 /* ProfileViewController.swift in Sources */,
+				1831E00C24AB6BC20081156F /* AboutUsViewController.swift in Sources */,
 				182A435724A9DFFA009D1E54 /* HomeViewController.swift in Sources */,
+				1831E00624AB52830081156F /* SettingsTableViewCell.swift in Sources */,
 				18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */,
 				18470CAC24A8EC55004B52B1 /* ForgetPasswordViewController.swift in Sources */,
 				182A435D24A9E01A009D1E54 /* SettingsViewController.swift in Sources */,

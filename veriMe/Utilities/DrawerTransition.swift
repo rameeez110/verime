@@ -35,8 +35,8 @@ public class DrawerTransition: UIPercentDrivenInteractiveTransition, UIViewContr
     
     public var hasDismissView:Bool = true
     
-    public var dismissViewAlpha:CGFloat =  0.8//0.6
-    public var drawerWidth:CGFloat =  320 //0
+    public var dismissViewAlpha:CGFloat =  0.6//0.6
+    public var drawerWidth:CGFloat =  280 //0
     
     public var presentDuration:TimeInterval = 1.0
     public var dismissDuration:TimeInterval = 1.0

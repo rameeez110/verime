@@ -23,9 +23,9 @@ extension SignInViewController {
         self.navigationController?.popViewController(animated: true)
     }
     @IBAction func didTapLogin() {
-        let storyboard = UIStoryboard(name: "Register", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "LoginVC")
-        self.navigationController?.pushViewController(vc, animated: true)
+        if let delegate = UIApplication.shared.windows.first?.windowScene?.delegate as? SceneDelegate {
+            delegate.initializeTabBar()
+        }
     }
     @IBAction func didTapForgetPassword() {
         let storyboard = UIStoryboard(name: "Register", bundle: nil)
