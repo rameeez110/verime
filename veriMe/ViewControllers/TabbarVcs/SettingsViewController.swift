@@ -29,8 +29,14 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.setupUI()
+        self.regesterTableViewCells()
         self.mapDataSource()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.setupUI()
     }
 }
 extension SettingsViewController {
@@ -40,8 +46,18 @@ extension SettingsViewController {
         self.navigationController?.navigationBar.isHidden = true
         self.tabBarController?.navigationController?.navigationBar.isHidden = false
         
-        self.regesterTableViewCells()
+        let btn1 = UIButton(type: .custom)
+        btn1.setImage(UIImage(named: "menu_button"), for: .normal)
+        btn1.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        btn1.addTarget(self, action: #selector(self.didTapSideMenu), for: .touchUpInside)
+        let item1 = UIBarButtonItem(customView: btn1)
+
+        self.tabBarController?.navigationItem.leftBarButtonItem = item1
     }
+    @objc func didTapSideMenu(){
+        CommonClass.sharedInstance.leftDrawerTransition.presentDrawerViewController(animated: true)
+    }
+    
     func regesterTableViewCells() {
         let budgetNib = UINib(nibName: "SettingsTableViewCell", bundle: nil)
         self.tableView.tableFooterView = UIView()
@@ -78,10 +94,20 @@ extension SettingsViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let model = self.dataSource[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if model.type == .AboutUs {
+            let vc = storyboard.instantiateViewController(withIdentifier: "AboutUsVC")
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else if model.type == .ContactUs {
+            let vc = storyboard.instantiateViewController(withIdentifier: "ContactUsVC")
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        return 60//UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

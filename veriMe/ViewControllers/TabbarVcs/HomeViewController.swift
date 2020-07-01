@@ -17,6 +17,11 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         self.setupSideMenu()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         self.setupUI()
     }
 }
@@ -38,23 +43,7 @@ extension HomeViewController {
         self.tabBarController?.title = "Verime"
         self.tabBarController?.navigationItem.hidesBackButton = true
         self.navigationController?.navigationBar.isHidden = true
-        self.tabBarController?.navigationController?.navigationBar.isHidden = false
-        
-        let btn1 = UIButton(type: .custom)
-        btn1.setImage(UIImage(named: "nav_menu_icon"), for: .normal)
-        btn1.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-        btn1.addTarget(self, action: #selector(self.didTapSideMenu), for: .touchUpInside)
-        let item1 = UIBarButtonItem(customView: btn1)
-
-        let btn2 = UIButton(type: .custom)
-        btn2.frame = CGRect(x: 0, y: 0, width: 25, height: 25)
-        btn2.clipsToBounds = true
-        btn2.layer.cornerRadius = btn2.frame.size.height / 2
-        btn2.addTarget(self, action: #selector(self.didTapAdd), for: .touchUpInside)
-        let item2 = UIBarButtonItem(customView: btn2)
-
-        self.tabBarController?.navigationItem.leftBarButtonItem = item1
-        self.tabBarController?.navigationItem.rightBarButtonItem = item2
+        self.tabBarController?.navigationController?.navigationBar.isHidden = true
     }
     @objc func didTapAdd(){
         let stroyBoard = UIStoryboard(name: "Settings", bundle: nil)
