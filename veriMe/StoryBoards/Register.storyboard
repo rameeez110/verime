@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="aQU-WR-QtW">
-                                <rect key="frame" x="35" y="144" width="344" height="505"/>
+                                <rect key="frame" x="35" y="139" width="344" height="505"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_without_text" translatesAutoresizingMaskIntoConstraints="NO" id="Nho-y3-QVV">
                                         <rect key="frame" x="0.0" y="0.0" width="344" height="100"/>
@@ -148,7 +148,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="aQU-WR-QtW" firstAttribute="top" secondItem="rOz-8k-VCA" secondAttribute="top" constant="100" id="9ph-0y-Gna"/>
+                            <constraint firstItem="aQU-WR-QtW" firstAttribute="top" secondItem="rOz-8k-VCA" secondAttribute="top" constant="95" id="9ph-0y-Gna"/>
                             <constraint firstItem="rOz-8k-VCA" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="aQU-WR-QtW" secondAttribute="bottom" constant="20" id="PBJ-Ab-OBc"/>
                             <constraint firstItem="rOz-8k-VCA" firstAttribute="trailing" secondItem="aQU-WR-QtW" secondAttribute="trailing" constant="35" id="RJ7-HA-8Wp"/>
                             <constraint firstItem="aQU-WR-QtW" firstAttribute="leading" secondItem="rOz-8k-VCA" secondAttribute="leading" constant="35" id="cFE-eT-ZWU"/>
@@ -368,7 +368,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="IaN-UJ-nlR">
-                                <rect key="frame" x="35" y="144" width="344" height="614.5"/>
+                                <rect key="frame" x="35" y="139" width="344" height="614.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_without_text" translatesAutoresizingMaskIntoConstraints="NO" id="7xr-Xr-9Nm">
                                         <rect key="frame" x="0.0" y="0.0" width="344" height="100"/>
@@ -551,7 +551,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="IaN-UJ-nlR" firstAttribute="top" secondItem="4nf-yC-Clz" secondAttribute="top" constant="100" id="KEb-Cw-dcE"/>
+                            <constraint firstItem="IaN-UJ-nlR" firstAttribute="top" secondItem="4nf-yC-Clz" secondAttribute="top" constant="95" id="KEb-Cw-dcE"/>
                             <constraint firstItem="14G-8w-eRQ" firstAttribute="leading" secondItem="4nf-yC-Clz" secondAttribute="leading" constant="25" id="Lws-Fq-Rbi"/>
                             <constraint firstItem="IaN-UJ-nlR" firstAttribute="leading" secondItem="4nf-yC-Clz" secondAttribute="leading" constant="35" id="daW-qP-iAj"/>
                             <constraint firstItem="4nf-yC-Clz" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="IaN-UJ-nlR" secondAttribute="bottom" constant="20" id="lf9-pf-dsL"/>

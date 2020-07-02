@@ -34,6 +34,15 @@ class SideMenuViewController: UIViewController {
     let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     var titles = ["Edit Profile","View References","Pending References","Contact Us","About Us"]
     var dataSource = [SideMenuViewModel]()
+    var leftDrawer : DrawerTransition?{
+        get{
+            guard let navigationVC = self.tabBarRef?.viewControllers?[0] as? UINavigationController else{return nil}
+            if let currentVC = navigationVC.viewControllers.filter({$0.isKind(of: HomeViewController.self)}).first as? HomeViewController {
+                return currentVC.leftDrawerTransition
+            }
+            return nil
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,6 +105,27 @@ extension SideMenuViewController: UITableViewDelegate,UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let model = self.dataSource[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        switch model.type {
+        case .EditProfile:
+            self.tabBarRef?.selectedIndex = 2
+        case .PendingRefrence:
+            self.tabBarRef?.selectedIndex = 1
+        case .ViewRefrence:
+            self.tabBarRef?.selectedIndex = 1
+        case .AboutUs:
+            self.tabBarRef?.selectedIndex = 3
+            let vc = storyboard.instantiateViewController(withIdentifier: "AboutUsVC")
+            self.tabBarRef?.navigationController?.pushViewController(vc, animated: true)
+        case .ContactUs:
+            self.tabBarRef?.selectedIndex = 3
+            let vc = storyboard.instantiateViewController(withIdentifier: "ContactUsVC")
+            self.tabBarRef?.navigationController?.pushViewController(vc, animated: true)
+        }
+        self.leftDrawer?.dismissDrawerViewController(animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

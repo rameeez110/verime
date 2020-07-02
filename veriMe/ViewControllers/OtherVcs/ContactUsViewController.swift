@@ -19,6 +19,11 @@ class ContactUsViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.setupUI()
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.setupUI()
+    }
 }
 extension ContactUsViewController {
     func setupUI() {

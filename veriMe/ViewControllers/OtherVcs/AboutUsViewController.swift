@@ -24,6 +24,22 @@ class AboutUsViewController: UIViewController {
 extension AboutUsViewController {
     func setupUI() {
         self.webView.load(URLRequest.init(url: URL.init(string: "http://actice.io/termsandconditions")!))
-        self.title = "About Us"
+        
+        self.tabBarController?.title = "About Us"
+        self.tabBarController?.navigationItem.hidesBackButton = true
+        self.navigationController?.navigationBar.isHidden = true
+        self.tabBarController?.navigationController?.navigationBar.isHidden = false
+        
+        let btn1 = UIButton(type: .custom)
+        btn1.setImage(UIImage(named: "back_button_black"), for: .normal)
+        btn1.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        btn1.addTarget(self, action: #selector(self.didTapSideMenu), for: .touchUpInside)
+        let item1 = UIBarButtonItem(customView: btn1)
+        
+        self.tabBarController?.navigationItem.leftBarButtonItem = item1
+    }
+    
+    @objc func didTapSideMenu(){
+        self.navigationController?.popViewController(animated: true)
     }
 }

@@ -36,6 +36,8 @@
 		18C044AF24A88A8500E9A278 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C044AD24A88A8500E9A278 /* LaunchScreen.storyboard */; };
 		18C044BA24A88A8500E9A278 /* veriMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044B924A88A8500E9A278 /* veriMeTests.swift */; };
 		18C044C524A88A8500E9A278 /* veriMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C044C424A88A8500E9A278 /* veriMeUITests.swift */; };
+		18D0C8F524AE63BF00D603CC /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D0C8F324AE63BF00D603CC /* DashboardCollectionViewCell.swift */; };
+		18D0C8F824AE70E500D603CC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18D0C8F724AE70E500D603CC /* WebKit.framework */; };
 		524350DCC75153B6E921F53D /* Pods_veriMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3666DD647DDE10B75D3F77 /* Pods_veriMeTests.framework */; };
 		5737E3F42B48CD59DE953F11 /* Pods_veriMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5E8B09EB45CFDFB9B9755C /* Pods_veriMe.framework */; };
 		97EEBACAF97B4BCCE793FF5F /* Pods_veriMe_veriMeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2144407806D2570D3072A20 /* Pods_veriMe_veriMeUITests.framework */; };
@@ -94,6 +96,8 @@
 		18C044C024A88A8500E9A278 /* veriMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = veriMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C044C424A88A8500E9A278 /* veriMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = veriMeUITests.swift; sourceTree = "<group>"; };
 		18C044C624A88A8500E9A278 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18D0C8F324AE63BF00D603CC /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
+		18D0C8F724AE70E500D603CC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		5D3666DD647DDE10B75D3F77 /* Pods_veriMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_veriMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60318DCB9F2A201E46883F35 /* Pods-veriMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriMe.debug.xcconfig"; path = "Target Support Files/Pods-veriMe/Pods-veriMe.debug.xcconfig"; sourceTree = "<group>"; };
 		6155C75F7142B0EB041A5A0A /* Pods-veriMe-veriMeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-veriMe-veriMeUITests.release.xcconfig"; path = "Target Support Files/Pods-veriMe-veriMeUITests/Pods-veriMe-veriMeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D0C8F824AE70E500D603CC /* WebKit.framework in Frameworks */,
 				5737E3F42B48CD59DE953F11 /* Pods_veriMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +176,7 @@
 				187F7E3324AB249900EDE189 /* SideMenuTableViewCell.xib */,
 				1831E00424AB52830081156F /* SettingsTableViewCell.swift */,
 				1831E00524AB52830081156F /* SettingsTableViewCell.xib */,
+				18D0C8F324AE63BF00D603CC /* DashboardCollectionViewCell.swift */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 		5AF843F0C5F91C441E6A105C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18D0C8F724AE70E500D603CC /* WebKit.framework */,
 				6D5E8B09EB45CFDFB9B9755C /* Pods_veriMe.framework */,
 				B2144407806D2570D3072A20 /* Pods_veriMe_veriMeUITests.framework */,
 				5D3666DD647DDE10B75D3F77 /* Pods_veriMeTests.framework */,
@@ -555,6 +562,7 @@
 				1831E00624AB52830081156F /* SettingsTableViewCell.swift in Sources */,
 				18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */,
 				18470CAC24A8EC55004B52B1 /* ForgetPasswordViewController.swift in Sources */,
+				18D0C8F524AE63BF00D603CC /* DashboardCollectionViewCell.swift in Sources */,
 				182A435D24A9E01A009D1E54 /* SettingsViewController.swift in Sources */,
 				182A435424A9D775009D1E54 /* DrawerTransition.swift in Sources */,
 				18470CA424A8C7F4004B52B1 /* Extensions.swift in Sources */,
