@@ -11,6 +11,7 @@ target 'veriMe' do
   pod 'IQKeyboardManagerSwift'
 #  pod "PageControls"
   pod 'Sevruk-PageControl'
+  pod 'FSPagerView'
   pod 'BetterSegmentedControl'
   pod 'STPopup'
 

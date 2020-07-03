@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompletedView" customModule="veriMe" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pbe-kY-P0g" customClass="CompletedView" customModule="veriMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="200" translatesAutoresizingMaskIntoConstraints="NO" id="TZI-SR-6kr">
+                    <rect key="frame" x="35" y="79" width="344" height="411.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="lUh-rm-ffv">
+                            <rect key="frame" x="0.0" y="0.0" width="344" height="156.5"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email_sent_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ERn-c6-wIn">
+                                    <rect key="frame" x="0.0" y="0.0" width="344" height="81"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent an email to your refree to complete this reference" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzk-o8-qV8">
+                                    <rect key="frame" x="0.0" y="116" width="344" height="40.5"/>
+                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="18"/>
+                                    <color key="textColor" red="0.35686274509999999" green="0.72941176470000002" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVk-DZ-GGP">
+                            <rect key="frame" x="0.0" y="356.5" width="344" height="55"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="NDg-Gk-Kcf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="23"/>
+                            <state key="normal" title="Back to home">
+                                <color key="titleColor" red="0.35686274509999999" green="0.72941176470000002" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.35686274509999999" green="0.72941176470000002" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapHomeButton" destination="pbe-kY-P0g" eventType="touchUpInside" id="pMc-hj-yGs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a1L-Kn-X0X" firstAttribute="trailing" secondItem="TZI-SR-6kr" secondAttribute="trailing" constant="35" id="Rk9-ej-dAE"/>
+                <constraint firstItem="TZI-SR-6kr" firstAttribute="leading" secondItem="a1L-Kn-X0X" secondAttribute="leading" constant="35" id="VcA-Rd-pcC"/>
+                <constraint firstItem="TZI-SR-6kr" firstAttribute="top" secondItem="a1L-Kn-X0X" secondAttribute="top" constant="35" id="j44-rn-eqw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="a1L-Kn-X0X"/>
+            <connections>
+                <outlet property="stackView" destination="TZI-SR-6kr" id="liR-H5-OrC"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="email_sent_icon" width="81" height="81"/>
+    </resources>
+</document>

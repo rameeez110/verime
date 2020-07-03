@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilesView" customModule="veriMe" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9WA-hh-swZ" customClass="FilesView" customModule="veriMe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="135" translatesAutoresizingMaskIntoConstraints="NO" id="auU-vI-X8g">
+                    <rect key="frame" x="35" y="79" width="344" height="460"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3Ww-Nb-lEh">
+                            <rect key="frame" x="0.0" y="0.0" width="344" height="270"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hKe-Pe-Kgl">
+                                    <rect key="frame" x="0.0" y="0.0" width="344" height="60"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HlE-kg-u2F">
+                                            <rect key="frame" x="10" y="6" width="324" height="48"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bef-Co-yfS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="324" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Work Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J3P-KV-lLW">
+                                                    <rect key="frame" x="0.0" y="22" width="324" height="26"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="HlE-kg-u2F" secondAttribute="trailing" constant="10" id="BVD-Xm-vRG"/>
+                                        <constraint firstItem="HlE-kg-u2F" firstAttribute="top" secondItem="hKe-Pe-Kgl" secondAttribute="top" constant="6" id="CNH-Tt-Vy4"/>
+                                        <constraint firstItem="HlE-kg-u2F" firstAttribute="leading" secondItem="hKe-Pe-Kgl" secondAttribute="leading" constant="10" id="F7t-Bf-dZA"/>
+                                        <constraint firstAttribute="bottom" secondItem="HlE-kg-u2F" secondAttribute="bottom" constant="6" id="VhR-Tr-M97"/>
+                                        <constraint firstAttribute="height" constant="60" id="Ynk-bw-mzv"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.35686274509999999" green="0.72941176470000002" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWY-oP-Cmf">
+                                    <rect key="frame" x="0.0" y="70" width="344" height="60"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cqq-yr-wY2">
+                                            <rect key="frame" x="10" y="6" width="324" height="48"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvb-tc-CnC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="324" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Work Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gg7-hT-vRy">
+                                                    <rect key="frame" x="0.0" y="22" width="324" height="26"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="cqq-yr-wY2" secondAttribute="bottom" constant="6" id="NuY-Db-xOc"/>
+                                        <constraint firstAttribute="height" constant="60" id="PIY-4t-OGO"/>
+                                        <constraint firstItem="cqq-yr-wY2" firstAttribute="leading" secondItem="pWY-oP-Cmf" secondAttribute="leading" constant="10" id="qsP-PL-5ft"/>
+                                        <constraint firstItem="cqq-yr-wY2" firstAttribute="top" secondItem="pWY-oP-Cmf" secondAttribute="top" constant="6" id="x8g-gb-waV"/>
+                                        <constraint firstAttribute="trailing" secondItem="cqq-yr-wY2" secondAttribute="trailing" constant="10" id="zQ5-yj-Wi2"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.35686274509999999" green="0.72941176470000002" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xpY-YL-5HU">
+                                    <rect key="frame" x="0.0" y="140" width="344" height="60"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GeZ-Zj-u1Y">
+                                            <rect key="frame" x="10" y="6" width="324" height="48"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfe-HX-WJW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="324" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="y3m-bi-uvP">
+                                                    <rect key="frame" x="0.0" y="27" width="324" height="21"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_box_selected" translatesAutoresizingMaskIntoConstraints="NO" id="KTQ-ao-Hsp">
+                                                            <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="Q8e-vj-Tby"/>
+                                                                <constraint firstAttribute="height" constant="20" id="e80-0i-FVL"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGm-Ou-TN1">
+                                                            <rect key="frame" x="40" y="2" width="30" height="17"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="yd5-GM-Eox"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_box" translatesAutoresizingMaskIntoConstraints="NO" id="yqy-1j-ua8">
+                                                            <rect key="frame" x="90" y="0.5" width="20" height="20"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="20" id="8Pb-8d-Bik"/>
+                                                                <constraint firstAttribute="width" constant="20" id="UDr-7G-dk6"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyL-5a-0CA">
+                                                            <rect key="frame" x="130" y="2" width="30" height="17"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="30" id="Gmn-ke-PcV"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkv-p9-Eay">
+                                                            <rect key="frame" x="180" y="0.0" width="144" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="GeZ-Zj-u1Y" firstAttribute="leading" secondItem="xpY-YL-5HU" secondAttribute="leading" constant="10" id="YMz-Bx-7WJ"/>
+                                        <constraint firstAttribute="height" constant="60" id="bjn-bk-Aiy"/>
+                                        <constraint firstAttribute="bottom" secondItem="GeZ-Zj-u1Y" secondAttribute="bottom" constant="6" id="qyT-1l-7u6"/>
+                                        <constraint firstItem="GeZ-Zj-u1Y" firstAttribute="top" secondItem="xpY-YL-5HU" secondAttribute="top" constant="6" id="zUB-WV-DaT"/>
+                                        <constraint firstAttribute="trailing" secondItem="GeZ-Zj-u1Y" secondAttribute="trailing" constant="10" id="zYc-pO-xaW"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.35686274509999999" green="0.72941176470000002" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oAg-Z8-Nt5">
+                                    <rect key="frame" x="0.0" y="210" width="344" height="60"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ol3-JV-qsj">
+                                            <rect key="frame" x="10" y="6" width="324" height="48"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reference Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fy-Ep-Qaj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="324" height="17"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Work Place" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tEi-He-BdO">
+                                                    <rect key="frame" x="0.0" y="22" width="324" height="26"/>
+                                                    <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <constraints>
+                                        <constraint firstItem="ol3-JV-qsj" firstAttribute="leading" secondItem="oAg-Z8-Nt5" secondAttribute="leading" constant="10" id="0K0-9w-Zfj"/>
+                                        <constraint firstAttribute="bottom" secondItem="ol3-JV-qsj" secondAttribute="bottom" constant="6" id="7DY-bC-bhg"/>
+                                        <constraint firstAttribute="height" constant="60" id="RAW-tG-ash"/>
+                                        <constraint firstItem="ol3-JV-qsj" firstAttribute="top" secondItem="oAg-Z8-Nt5" secondAttribute="top" constant="6" id="fTz-71-WMq"/>
+                                        <constraint firstAttribute="trailing" secondItem="ol3-JV-qsj" secondAttribute="trailing" constant="10" id="o5n-YB-fir"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                            <color key="value" red="0.35686274509999999" green="0.72941176470000002" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                            <real key="value" value="0.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3t6-XF-Spb">
+                            <rect key="frame" x="0.0" y="405" width="344" height="55"/>
+                            <color key="backgroundColor" red="0.35686274509999999" green="0.72941176470000002" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="tj2-4F-LDe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="23"/>
+                            <state key="normal" title="Sign in">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="25"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didTapSubmitVerification" destination="9WA-hh-swZ" eventType="touchUpInside" id="a2m-Up-H7z"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLt-Y5-p2t">
+                    <rect key="frame" x="347" y="98" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="HJ8-GZ-VbI"/>
+                        <constraint firstAttribute="height" constant="22" id="KUo-Vm-8BA"/>
+                    </constraints>
+                    <state key="normal" image="calendar_icon"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Moe-sl-iEm">
+                    <rect key="frame" x="347" y="168" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="22" id="Oez-ZQ-9Fa"/>
+                        <constraint firstAttribute="height" constant="22" id="hm0-xS-AS0"/>
+                    </constraints>
+                    <state key="normal" image="calendar_icon"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naL-sr-xXE">
+                    <rect key="frame" x="347" y="308" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="PKf-5t-9cu"/>
+                        <constraint firstAttribute="width" constant="22" id="pn9-oS-v8x"/>
+                    </constraints>
+                    <state key="normal" image="file_icon"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="auU-vI-X8g" firstAttribute="leading" secondItem="otH-in-NMF" secondAttribute="leading" constant="35" id="7xp-qa-Zoz"/>
+                <constraint firstItem="naL-sr-xXE" firstAttribute="trailing" secondItem="oAg-Z8-Nt5" secondAttribute="trailing" constant="-10" id="CHK-cw-iOs"/>
+                <constraint firstItem="naL-sr-xXE" firstAttribute="centerY" secondItem="oAg-Z8-Nt5" secondAttribute="centerY" id="GPx-EJ-4qU"/>
+                <constraint firstItem="auU-vI-X8g" firstAttribute="top" secondItem="otH-in-NMF" secondAttribute="top" constant="35" id="OML-ti-ATg"/>
+                <constraint firstItem="Moe-sl-iEm" firstAttribute="trailing" secondItem="pWY-oP-Cmf" secondAttribute="trailing" constant="-10" id="Psr-cJ-9hj"/>
+                <constraint firstItem="zLt-Y5-p2t" firstAttribute="trailing" secondItem="hKe-Pe-Kgl" secondAttribute="trailing" constant="-10" id="Qou-Kz-naL"/>
+                <constraint firstItem="Moe-sl-iEm" firstAttribute="centerY" secondItem="pWY-oP-Cmf" secondAttribute="centerY" id="dFk-kd-SBp"/>
+                <constraint firstItem="otH-in-NMF" firstAttribute="trailing" secondItem="auU-vI-X8g" secondAttribute="trailing" constant="35" id="hxu-Ln-KyV"/>
+                <constraint firstItem="zLt-Y5-p2t" firstAttribute="centerY" secondItem="hKe-Pe-Kgl" secondAttribute="centerY" id="rug-hm-crT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="otH-in-NMF"/>
+            <connections>
+                <outlet property="stackView" destination="auU-vI-X8g" id="ebZ-4P-F8h"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="150"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar_icon" width="18" height="18"/>
+        <image name="check_box" width="19" height="19"/>
+        <image name="check_box_selected" width="19" height="19"/>
+        <image name="file_icon" width="18.333333969116211" height="22"/>
+    </resources>
+</document>

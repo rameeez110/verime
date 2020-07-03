@@ -30,7 +30,12 @@
 		1853378924AF292500D45C2D /* FilterPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853378724AF292500D45C2D /* FilterPopupViewController.xib */; };
 		1853378C24AF2A9B00D45C2D /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853378A24AF2A9B00D45C2D /* FilterTableViewCell.swift */; };
 		1853378D24AF2A9B00D45C2D /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853378B24AF2A9B00D45C2D /* FilterTableViewCell.xib */; };
-		1853378F24AF402A00D45C2D /* ZeitwertSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853378E24AF402A00D45C2D /* ZeitwertSegmentedControl.swift */; };
+		1853379424AF4A1F00D45C2D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853379224AF4A1F00D45C2D /* DetailsView.swift */; };
+		1853379524AF4A1F00D45C2D /* DetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853379324AF4A1F00D45C2D /* DetailsView.xib */; };
+		1853379824AF4A2D00D45C2D /* FilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853379624AF4A2D00D45C2D /* FilesView.swift */; };
+		1853379924AF4A2D00D45C2D /* FilesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853379724AF4A2D00D45C2D /* FilesView.xib */; };
+		1853379C24AF4A3B00D45C2D /* CompletedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853379A24AF4A3B00D45C2D /* CompletedView.swift */; };
+		1853379D24AF4A3B00D45C2D /* CompletedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853379B24AF4A3B00D45C2D /* CompletedView.xib */; };
 		186A822E24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A822C24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift */; };
 		186A822F24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186A822D24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib */; };
 		186A823124AF1A9A00C9B2FF /* PendingReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A823024AF1A9A00C9B2FF /* PendingReferenceViewController.swift */; };
@@ -95,7 +100,12 @@
 		1853378724AF292500D45C2D /* FilterPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterPopupViewController.xib; sourceTree = "<group>"; };
 		1853378A24AF2A9B00D45C2D /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		1853378B24AF2A9B00D45C2D /* FilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
-		1853378E24AF402A00D45C2D /* ZeitwertSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeitwertSegmentedControl.swift; sourceTree = "<group>"; };
+		1853379224AF4A1F00D45C2D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		1853379324AF4A1F00D45C2D /* DetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsView.xib; sourceTree = "<group>"; };
+		1853379624AF4A2D00D45C2D /* FilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesView.swift; sourceTree = "<group>"; };
+		1853379724AF4A2D00D45C2D /* FilesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilesView.xib; sourceTree = "<group>"; };
+		1853379A24AF4A3B00D45C2D /* CompletedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedView.swift; sourceTree = "<group>"; };
+		1853379B24AF4A3B00D45C2D /* CompletedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedView.xib; sourceTree = "<group>"; };
 		186A822C24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReferenceTableViewCell.swift; sourceTree = "<group>"; };
 		186A822D24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewReferenceTableViewCell.xib; sourceTree = "<group>"; };
 		186A823024AF1A9A00C9B2FF /* PendingReferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingReferenceViewController.swift; sourceTree = "<group>"; };
@@ -218,7 +228,6 @@
 				18470CA324A8C7F4004B52B1 /* Extensions.swift */,
 				18470CA524A8C80D004B52B1 /* CommonClass.swift */,
 				182A435324A9D775009D1E54 /* DrawerTransition.swift */,
-				1853378E24AF402A00D45C2D /* ZeitwertSegmentedControl.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -263,6 +272,27 @@
 			path = Popups;
 			sourceTree = "<group>";
 		};
+		1853379024AF49E200D45C2D /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				1853379124AF49EC00D45C2D /* SubmitReferenceViews */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		1853379124AF49EC00D45C2D /* SubmitReferenceViews */ = {
+			isa = PBXGroup;
+			children = (
+				1853379224AF4A1F00D45C2D /* DetailsView.swift */,
+				1853379324AF4A1F00D45C2D /* DetailsView.xib */,
+				1853379624AF4A2D00D45C2D /* FilesView.swift */,
+				1853379724AF4A2D00D45C2D /* FilesView.xib */,
+				1853379A24AF4A3B00D45C2D /* CompletedView.swift */,
+				1853379B24AF4A3B00D45C2D /* CompletedView.xib */,
+			);
+			path = SubmitReferenceViews;
+			sourceTree = "<group>";
+		};
 		18C0449624A88A8300E9A278 = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +318,7 @@
 		18C044A124A88A8300E9A278 /* veriMe */ = {
 			isa = PBXGroup;
 			children = (
+				1853379024AF49E200D45C2D /* CustomViews */,
 				18470CA024A8C597004B52B1 /* StoryBoards */,
 				18470C9924A8C277004B52B1 /* Fonts */,
 				18470C9824A8C26C004B52B1 /* Utilities */,
@@ -452,6 +483,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1853379924AF4A2D00D45C2D /* FilesView.xib in Resources */,
 				18470C9D24A8C29A004B52B1 /* Comfortaa-Bold.ttf in Resources */,
 				186A823524AF1AEB00C9B2FF /* PendingReferenceTableViewCell.xib in Resources */,
 				18C044AF24A88A8500E9A278 /* LaunchScreen.storyboard in Resources */,
@@ -461,6 +493,8 @@
 				1831E00724AB52830081156F /* SettingsTableViewCell.xib in Resources */,
 				18C044AC24A88A8500E9A278 /* Assets.xcassets in Resources */,
 				1853378924AF292500D45C2D /* FilterPopupViewController.xib in Resources */,
+				1853379D24AF4A3B00D45C2D /* CompletedView.xib in Resources */,
+				1853379524AF4A1F00D45C2D /* DetailsView.xib in Resources */,
 				18470C9E24A8C29A004B52B1 /* Comfortaa-Regular.ttf in Resources */,
 				18470C9F24A8C29A004B52B1 /* Comfortaa-Light.ttf in Resources */,
 				18C044AA24A88A8300E9A278 /* Main.storyboard in Resources */,
@@ -596,6 +630,7 @@
 				18470CA624A8C80D004B52B1 /* CommonClass.swift in Sources */,
 				18470CAA24A8CF1F004B52B1 /* SingUpViewController.swift in Sources */,
 				1853378824AF292500D45C2D /* FilterPopupViewController.swift in Sources */,
+				1853379C24AF4A3B00D45C2D /* CompletedView.swift in Sources */,
 				186A823424AF1AEB00C9B2FF /* PendingReferenceTableViewCell.swift in Sources */,
 				18C044A724A88A8300E9A278 /* ViewController.swift in Sources */,
 				18470CA824A8CF13004B52B1 /* SignInViewController.swift in Sources */,
@@ -603,6 +638,7 @@
 				182A435924A9E004009D1E54 /* RefrencesViewController.swift in Sources */,
 				18C044A324A88A8300E9A278 /* AppDelegate.swift in Sources */,
 				1831E00A24AB6BB80081156F /* ContactUsViewController.swift in Sources */,
+				1853379424AF4A1F00D45C2D /* DetailsView.swift in Sources */,
 				182A435B24A9E00F009D1E54 /* ProfileViewController.swift in Sources */,
 				1831E00C24AB6BC20081156F /* AboutUsViewController.swift in Sources */,
 				186A823124AF1A9A00C9B2FF /* PendingReferenceViewController.swift in Sources */,
@@ -610,7 +646,7 @@
 				186A822E24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift in Sources */,
 				1831E00624AB52830081156F /* SettingsTableViewCell.swift in Sources */,
 				18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */,
-				1853378F24AF402A00D45C2D /* ZeitwertSegmentedControl.swift in Sources */,
+				1853379824AF4A2D00D45C2D /* FilesView.swift in Sources */,
 				18470CAC24A8EC55004B52B1 /* ForgetPasswordViewController.swift in Sources */,
 				1853378C24AF2A9B00D45C2D /* FilterTableViewCell.swift in Sources */,
 				18D0C8F524AE63BF00D603CC /* DashboardCollectionViewCell.swift in Sources */,
