@@ -9,7 +9,8 @@ target 'veriMe' do
 
   pod 'SDWebImage'
   pod 'IQKeyboardManagerSwift'
-  pod "PageControls"
+#  pod "PageControls"
+  pod 'Sevruk-PageControl'
   pod 'BetterSegmentedControl'
   pod 'STPopup'
 

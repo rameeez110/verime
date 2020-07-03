@@ -30,6 +30,7 @@
 		1853378924AF292500D45C2D /* FilterPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853378724AF292500D45C2D /* FilterPopupViewController.xib */; };
 		1853378C24AF2A9B00D45C2D /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853378A24AF2A9B00D45C2D /* FilterTableViewCell.swift */; };
 		1853378D24AF2A9B00D45C2D /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853378B24AF2A9B00D45C2D /* FilterTableViewCell.xib */; };
+		1853378F24AF402A00D45C2D /* ZeitwertSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853378E24AF402A00D45C2D /* ZeitwertSegmentedControl.swift */; };
 		186A822E24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A822C24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift */; };
 		186A822F24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186A822D24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib */; };
 		186A823124AF1A9A00C9B2FF /* PendingReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A823024AF1A9A00C9B2FF /* PendingReferenceViewController.swift */; };
@@ -94,6 +95,7 @@
 		1853378724AF292500D45C2D /* FilterPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterPopupViewController.xib; sourceTree = "<group>"; };
 		1853378A24AF2A9B00D45C2D /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		1853378B24AF2A9B00D45C2D /* FilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
+		1853378E24AF402A00D45C2D /* ZeitwertSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeitwertSegmentedControl.swift; sourceTree = "<group>"; };
 		186A822C24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReferenceTableViewCell.swift; sourceTree = "<group>"; };
 		186A822D24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewReferenceTableViewCell.xib; sourceTree = "<group>"; };
 		186A823024AF1A9A00C9B2FF /* PendingReferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingReferenceViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				18470CA324A8C7F4004B52B1 /* Extensions.swift */,
 				18470CA524A8C80D004B52B1 /* CommonClass.swift */,
 				182A435324A9D775009D1E54 /* DrawerTransition.swift */,
+				1853378E24AF402A00D45C2D /* ZeitwertSegmentedControl.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 				186A822E24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift in Sources */,
 				1831E00624AB52830081156F /* SettingsTableViewCell.swift in Sources */,
 				18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */,
+				1853378F24AF402A00D45C2D /* ZeitwertSegmentedControl.swift in Sources */,
 				18470CAC24A8EC55004B52B1 /* ForgetPasswordViewController.swift in Sources */,
 				1853378C24AF2A9B00D45C2D /* FilterTableViewCell.swift in Sources */,
 				18D0C8F524AE63BF00D603CC /* DashboardCollectionViewCell.swift in Sources */,

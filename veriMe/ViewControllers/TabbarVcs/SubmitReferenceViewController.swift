@@ -7,21 +7,21 @@
 //
 
 import UIKit
-import BetterSegmentedControl
+import Sevruk_PageControl
 
 class SubmitReferenceViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
-    
-    var control: BetterSegmentedControl?
+    @IBOutlet weak var scrollingPageControl: PageControl!
+    @IBOutlet weak var scrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.regesterTableViewCells()
-        self.setupSegmentControl()
+        scrollView.delegate = self
+        self.scrollView.contentSize = CGSize.init(width: 900, height: 500)
+        self.scrollingPageControl.numberOfPages = Int(scrollView.contentSize.width / scrollView.bounds.width)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,35 +45,12 @@ extension SubmitReferenceViewController {
         DispatchQueue.main.async {
             self.view.layoutIfNeeded()
         }
+        
+        self.scrollingPageControl.indicatorTintColor = .black
+        self.scrollingPageControl.currentIndicatorTintColor = UIColor().colorWithHexString(hexString: "5BBA6F")
     }
     @objc func didTapSideMenu(){
         self.navigationController?.popViewController(animated: true)
-    }
-    func regesterTableViewCells() {
-        let budgetNib = UINib(nibName: "PendingReferenceTableViewCell", bundle: nil)
-        self.tableView.tableFooterView = UIView()
-        self.tableView.register(budgetNib, forCellReuseIdentifier: "pendingReferenceCell")
-    }
-    func setupSegmentControl() {
-        control = BetterSegmentedControl(
-            frame: CGRect(x: UIScreen.main.bounds.size.width / 6, y: 100, width: 300, height: 44),
-            segments: LabelSegment.segments(withTitles: ["Landlord", "Workplace"],
-            normalFont: UIFont(name: "Comfortaa", size: 14.0)!,
-            normalTextColor: .lightGray,
-            selectedFont: UIFont(name: "Comfortaa-Bold", size: 14.0)!,
-            selectedTextColor: .white),
-            index: 1,
-            options: [.backgroundColor(.white),
-                      .indicatorViewBackgroundColor(UIColor().colorWithHexString(hexString: "5BBA6F")),.cornerRadius(20)])//
-        control?.addTarget(self, action: #selector(self.controlValueChanged(_:)), for: .valueChanged)
-        control?.layer.cornerRadius = 20
-        control?.borderWidth = 0.5
-        control?.borderColor = .lightGray
-        control?.clipsToBounds = true
-        self.view.addSubview(control!)
-    }
-    @objc func controlValueChanged(_ sender:UIButton){
-        print(control?.index ?? 0)
     }
 }
 
@@ -89,5 +66,12 @@ extension SubmitReferenceViewController: UITableViewDelegate,UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+}
+
+extension SubmitReferenceViewController: UIScrollViewDelegate {
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let page = scrollView.contentOffset.x / scrollView.bounds.width
+        self.scrollingPageControl.currentPage = Int(page)
     }
 }

@@ -1,0 +1,6 @@
+framework module Sevruk_PageControl {
+  umbrella header "Sevruk-PageControl-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -33,7 +33,7 @@ class HomeViewController: UIViewController {
         NSAttributedString.Key.underlineStyle : 1] as [NSAttributedString.Key : Any]
 
     var attributedString = NSMutableAttributedString(string:"")
-    var titles = ["Verified References","Pending References","Submit","Request"]
+    var titles = ["Verified References","Pending References","Submit References","Request"]
     var dataSource = [ReferencesViewModel]()
 
     override func viewDidLoad() {
