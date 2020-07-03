@@ -54,7 +54,7 @@ extension PendingReferenceViewController {
         
     }
     @objc func didTapSideMenu(){
-        CommonClass.sharedInstance.leftDrawerTransition.presentDrawerViewController(animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     @objc func didTapFilter(){
         let vc = FilterPopupViewController(nibName: "FilterPopupViewController", bundle: nil)
