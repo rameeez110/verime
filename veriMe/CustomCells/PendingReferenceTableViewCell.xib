@@ -24,9 +24,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FD7-cs-jtw">
-                        <rect key="frame" x="0.0" y="-57" width="320" height="157"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FD7-cs-jtw">
+                        <rect key="frame" x="0.0" y="5" width="320" height="150"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -105,6 +104,10 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="d4c-AN-npS" secondAttribute="bottom" constant="25" id="Cb1-q0-KkB"/>
                     <constraint firstAttribute="trailing" secondItem="d4c-AN-npS" secondAttribute="trailing" constant="15" id="P7R-U7-MHK"/>
+                    <constraint firstItem="FD7-cs-jtw" firstAttribute="bottom" secondItem="d4c-AN-npS" secondAttribute="bottom" constant="20" id="PKg-TN-tEC"/>
+                    <constraint firstItem="FD7-cs-jtw" firstAttribute="trailing" secondItem="d4c-AN-npS" secondAttribute="trailing" constant="15" id="Wc2-Xz-g2X"/>
+                    <constraint firstItem="FD7-cs-jtw" firstAttribute="top" secondItem="d4c-AN-npS" secondAttribute="top" constant="-20" id="bmd-tR-Imv"/>
+                    <constraint firstItem="FD7-cs-jtw" firstAttribute="leading" secondItem="d4c-AN-npS" secondAttribute="leading" constant="-15" id="ePB-cI-pum"/>
                     <constraint firstItem="d4c-AN-npS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="nWF-om-qfZ"/>
                     <constraint firstItem="d4c-AN-npS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="z6f-iX-TOH"/>
                 </constraints>

@@ -26,6 +26,10 @@
 		18470CA824A8CF13004B52B1 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CA724A8CF13004B52B1 /* SignInViewController.swift */; };
 		18470CAA24A8CF1F004B52B1 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CA924A8CF1F004B52B1 /* SingUpViewController.swift */; };
 		18470CAC24A8EC55004B52B1 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18470CAB24A8EC55004B52B1 /* ForgetPasswordViewController.swift */; };
+		1853378824AF292500D45C2D /* FilterPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853378624AF292500D45C2D /* FilterPopupViewController.swift */; };
+		1853378924AF292500D45C2D /* FilterPopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853378724AF292500D45C2D /* FilterPopupViewController.xib */; };
+		1853378C24AF2A9B00D45C2D /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1853378A24AF2A9B00D45C2D /* FilterTableViewCell.swift */; };
+		1853378D24AF2A9B00D45C2D /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1853378B24AF2A9B00D45C2D /* FilterTableViewCell.xib */; };
 		186A822E24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A822C24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift */; };
 		186A822F24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186A822D24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib */; };
 		186A823124AF1A9A00C9B2FF /* PendingReferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186A823024AF1A9A00C9B2FF /* PendingReferenceViewController.swift */; };
@@ -86,6 +90,10 @@
 		18470CA724A8CF13004B52B1 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		18470CA924A8CF1F004B52B1 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
 		18470CAB24A8EC55004B52B1 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		1853378624AF292500D45C2D /* FilterPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPopupViewController.swift; sourceTree = "<group>"; };
+		1853378724AF292500D45C2D /* FilterPopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterPopupViewController.xib; sourceTree = "<group>"; };
+		1853378A24AF2A9B00D45C2D /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		1853378B24AF2A9B00D45C2D /* FilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
 		186A822C24AF12C300C9B2FF /* ViewReferenceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReferenceTableViewCell.swift; sourceTree = "<group>"; };
 		186A822D24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewReferenceTableViewCell.xib; sourceTree = "<group>"; };
 		186A823024AF1A9A00C9B2FF /* PendingReferenceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingReferenceViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +184,7 @@
 		18470C9624A8C251004B52B1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1853378524AF291300D45C2D /* Popups */,
 				1831E00824AB6BA20081156F /* OtherVcs */,
 				182A435524A9DFE8009D1E54 /* TabbarVcs */,
 				18470CAD24A8EC5A004B52B1 /* RegisterVcs */,
@@ -195,6 +204,8 @@
 				186A822D24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib */,
 				186A823224AF1AEB00C9B2FF /* PendingReferenceTableViewCell.swift */,
 				186A823324AF1AEB00C9B2FF /* PendingReferenceTableViewCell.xib */,
+				1853378A24AF2A9B00D45C2D /* FilterTableViewCell.swift */,
+				1853378B24AF2A9B00D45C2D /* FilterTableViewCell.xib */,
 			);
 			path = CustomCells;
 			sourceTree = "<group>";
@@ -238,6 +249,15 @@
 				18470CAB24A8EC55004B52B1 /* ForgetPasswordViewController.swift */,
 			);
 			path = RegisterVcs;
+			sourceTree = "<group>";
+		};
+		1853378524AF291300D45C2D /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				1853378624AF292500D45C2D /* FilterPopupViewController.swift */,
+				1853378724AF292500D45C2D /* FilterPopupViewController.xib */,
+			);
+			path = Popups;
 			sourceTree = "<group>";
 		};
 		18C0449624A88A8300E9A278 = {
@@ -432,10 +452,12 @@
 				18470C9D24A8C29A004B52B1 /* Comfortaa-Bold.ttf in Resources */,
 				186A823524AF1AEB00C9B2FF /* PendingReferenceTableViewCell.xib in Resources */,
 				18C044AF24A88A8500E9A278 /* LaunchScreen.storyboard in Resources */,
+				1853378D24AF2A9B00D45C2D /* FilterTableViewCell.xib in Resources */,
 				186A822F24AF12C300C9B2FF /* ViewReferenceTableViewCell.xib in Resources */,
 				18470CA224A8C5DD004B52B1 /* Register.storyboard in Resources */,
 				1831E00724AB52830081156F /* SettingsTableViewCell.xib in Resources */,
 				18C044AC24A88A8500E9A278 /* Assets.xcassets in Resources */,
+				1853378924AF292500D45C2D /* FilterPopupViewController.xib in Resources */,
 				18470C9E24A8C29A004B52B1 /* Comfortaa-Regular.ttf in Resources */,
 				18470C9F24A8C29A004B52B1 /* Comfortaa-Light.ttf in Resources */,
 				18C044AA24A88A8300E9A278 /* Main.storyboard in Resources */,
@@ -570,6 +592,7 @@
 				187F7E3424AB249900EDE189 /* SideMenuTableViewCell.swift in Sources */,
 				18470CA624A8C80D004B52B1 /* CommonClass.swift in Sources */,
 				18470CAA24A8CF1F004B52B1 /* SingUpViewController.swift in Sources */,
+				1853378824AF292500D45C2D /* FilterPopupViewController.swift in Sources */,
 				186A823424AF1AEB00C9B2FF /* PendingReferenceTableViewCell.swift in Sources */,
 				18C044A724A88A8300E9A278 /* ViewController.swift in Sources */,
 				18470CA824A8CF13004B52B1 /* SignInViewController.swift in Sources */,
@@ -585,6 +608,7 @@
 				1831E00624AB52830081156F /* SettingsTableViewCell.swift in Sources */,
 				18C044A524A88A8300E9A278 /* SceneDelegate.swift in Sources */,
 				18470CAC24A8EC55004B52B1 /* ForgetPasswordViewController.swift in Sources */,
+				1853378C24AF2A9B00D45C2D /* FilterTableViewCell.swift in Sources */,
 				18D0C8F524AE63BF00D603CC /* DashboardCollectionViewCell.swift in Sources */,
 				182A435D24A9E01A009D1E54 /* SettingsViewController.swift in Sources */,
 				182A435424A9D775009D1E54 /* DrawerTransition.swift in Sources */,

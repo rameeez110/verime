@@ -8,6 +8,7 @@
 
 import UIKit
 import BetterSegmentedControl
+import STPopup
 
 enum ViewRefrenceType: Int {
     case Landlord = 0,Workplace
@@ -18,6 +19,7 @@ class RefrencesViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var control: BetterSegmentedControl?
+    var popupVC = STPopupController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +40,47 @@ extension RefrencesViewController {
     func setupUI() {
         self.title = "View References"
         self.navigationController?.navigationBar.isHidden = false
+        
+        let btn1 = UIButton(type: .custom)
+        btn1.setImage(UIImage(named: "menu_button_black"), for: .normal)
+        btn1.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        btn1.addTarget(self, action: #selector(self.didTapSideMenu), for: .touchUpInside)
+        let item1 = UIBarButtonItem(customView: btn1)
+        
+        let btn2 = UIButton(type: .custom)
+        btn2.setImage(UIImage(named: "filter_button"), for: .normal)
+        btn2.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        btn2.addTarget(self, action: #selector(self.didTapFilter), for: .touchUpInside)
+        let item2 = UIBarButtonItem(customView: btn2)
+        
+        self.navigationItem.leftBarButtonItem = item1
+        self.navigationItem.rightBarButtonItem = item2
+        
     }
+    @objc func didTapSideMenu(){
+        CommonClass.sharedInstance.leftDrawerTransition.presentDrawerViewController(animated: true)
+    }
+    @objc func didTapFilter(){
+        let vc = FilterPopupViewController(nibName: "FilterPopupViewController", bundle: nil)
+        self.initializeQlmController(viewController: vc)
+    }
+    @objc func initializeQlmController(viewController: UIViewController){
+        popupVC = STPopupController.init(rootViewController: viewController)
+        popupVC.containerView.backgroundColor = UIColor.clear
+        let blur = UIBlurEffect.init(style: .dark)
+        popupVC.style = .bottomSheet
+        popupVC.backgroundView = UIVisualEffectView.init(effect: blur)
+        popupVC.backgroundView?.alpha = 0.9
+        popupVC.setNavigationBarHidden(true, animated: true)
+        popupVC.backgroundView?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.handleTapPopup(_:))))
+        popupVC.present(in: self)
+    }
+    // function which is triggered when handleTap is called
+    
+    @objc func handleTapPopup(_ sender: UITapGestureRecognizer) {
+        popupVC.dismiss()
+    }
+    
     func regesterTableViewCells() {
         let budgetNib = UINib(nibName: "ViewReferenceTableViewCell", bundle: nil)
         self.tableView.tableFooterView = UIView()
