@@ -27,10 +27,8 @@ class ContactUsViewController: UIViewController {
 }
 extension ContactUsViewController {
     func setupUI() {
-        self.tabBarController?.title = "Contact Us"
-        self.tabBarController?.navigationItem.hidesBackButton = true
-        self.navigationController?.navigationBar.isHidden = true
-        self.tabBarController?.navigationController?.navigationBar.isHidden = false
+        self.title = "Contact Us"
+        self.navigationController?.navigationBar.isHidden = false
         
         let btn1 = UIButton(type: .custom)
         btn1.setImage(UIImage(named: "back_button_black"), for: .normal)
@@ -38,7 +36,7 @@ extension ContactUsViewController {
         btn1.addTarget(self, action: #selector(self.didTapSideMenu), for: .touchUpInside)
         let item1 = UIBarButtonItem(customView: btn1)
         
-        self.tabBarController?.navigationItem.leftBarButtonItem = item1
+        self.navigationItem.leftBarButtonItem = item1
         
         self.subjectTextView.text = "Your Subject"
         self.subjectTextView.textColor = UIColor.lightGray

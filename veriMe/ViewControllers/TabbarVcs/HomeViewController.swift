@@ -8,6 +8,17 @@
 
 import UIKit
 
+enum ReferencesViewType: Int {
+    case VerifiedReferences = 0,PendingReferences,Submit,Request
+}
+
+struct ReferencesViewModel {
+    var title = String()
+    var type = ReferencesViewType.VerifiedReferences
+    var notification = String()
+    var imageName = String()
+}
+
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
@@ -17,17 +28,20 @@ class HomeViewController: UIViewController {
     var leftDrawerTransition:DrawerTransition!
 
     var attrs = [
-        NSAttributedString.Key.font : UIFont(name: "Comfortaa-Bold", size: 13)!,
+        NSAttributedString.Key.font : UIFont(name: "Comfortaa-Bold", size: 16)!,
         NSAttributedString.Key.foregroundColor : UIColor.systemYellow,
         NSAttributedString.Key.underlineStyle : 1] as [NSAttributedString.Key : Any]
 
     var attributedString = NSMutableAttributedString(string:"")
+    var titles = ["Verified References","Pending References","Submit","Request"]
+    var dataSource = [ReferencesViewModel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         self.setupSideMenu()
+        self.mapDataSource()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,6 +75,21 @@ extension HomeViewController {
         layout.scrollDirection = .vertical
         self.collectionView.collectionViewLayout = layout
     }
+    func mapDataSource() {
+        self.dataSource = [ReferencesViewModel]()
+        for i in 0..<self.titles.count {
+            var model = ReferencesViewModel()
+            model.title = self.titles[i]
+            model.type = ReferencesViewType(rawValue: i) ?? ReferencesViewType.VerifiedReferences
+            if model.type == .Request {
+                model.imageName = "request_icon"
+            } else {
+                model.imageName = "references_icon"
+            }
+            self.dataSource.append(model)
+        }
+        self.collectionView.reloadData()
+    }
     func setupUI() {
         self.tabBarController?.title = "Verime"
         self.tabBarController?.navigationItem.hidesBackButton = true
@@ -81,13 +110,35 @@ extension HomeViewController {
 
 extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return self.dataSource.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dashboardCell", for: indexPath) as! DashboardCollectionViewCell
         
+        let model = self.dataSource[indexPath.row]
+        
+        cell.titleLabel.text = model.title
+        cell.iconImageView.image = UIImage(named: model.imageName)
+        
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let model = self.dataSource[indexPath.row]
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        switch model.type {
+        case .VerifiedReferences:
+            self.tabBarController?.selectedIndex = 1
+        case .PendingReferences:
+            let vc = storyboard.instantiateViewController(withIdentifier: "pendingReferencesVC")
+            self.navigationController?.pushViewController(vc, animated: true)
+        case.Submit:
+            let vc = storyboard.instantiateViewController(withIdentifier: "submitReferencesVC")
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .Request:
+            print("")
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

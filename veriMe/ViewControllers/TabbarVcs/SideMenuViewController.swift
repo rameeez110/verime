@@ -107,6 +107,7 @@ extension SideMenuViewController: UITableViewDelegate,UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let model = self.dataSource[indexPath.row]
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         switch model.type {
@@ -125,6 +126,14 @@ extension SideMenuViewController: UITableViewDelegate,UITableViewDataSource {
             let vc = storyboard.instantiateViewController(withIdentifier: "ContactUsVC")
             self.tabBarRef?.navigationController?.pushViewController(vc, animated: true)
         }
+        
+        for i in 0..<self.dataSource.count {
+            self.dataSource[i].selected = false
+        }
+        
+        self.dataSource[indexPath.row].selected = true
+        tableView.reloadData()
+        
         self.leftDrawer?.dismissDrawerViewController(animated: true)
     }
     

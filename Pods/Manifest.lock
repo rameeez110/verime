@@ -1,22 +1,38 @@
 PODS:
+  - BetterSegmentedControl (1.3.0)
   - IQKeyboardManagerSwift (6.5.5)
+  - PageControls (1.0.1):
+    - PageControls/FilledPageControl (= 1.0.1)
+    - PageControls/PillPageControl (= 1.0.1)
+    - PageControls/ScrollingPageControl (= 1.0.1)
+    - PageControls/SnakePageControl (= 1.0.1)
+  - PageControls/FilledPageControl (1.0.1)
+  - PageControls/PillPageControl (1.0.1)
+  - PageControls/ScrollingPageControl (1.0.1)
+  - PageControls/SnakePageControl (1.0.1)
   - SDWebImage (5.5.2):
     - SDWebImage/Core (= 5.5.2)
   - SDWebImage/Core (5.5.2)
 
 DEPENDENCIES:
+  - BetterSegmentedControl
   - IQKeyboardManagerSwift
+  - PageControls
   - SDWebImage
 
 SPEC REPOS:
   trunk:
+    - BetterSegmentedControl
     - IQKeyboardManagerSwift
+    - PageControls
     - SDWebImage
 
 SPEC CHECKSUMS:
+  BetterSegmentedControl: 85d1b0343a09603b098884d527f550dfc8e6cdd9
   IQKeyboardManagerSwift: 0fb93310284665245591f50f7a5e38de615960b7
+  PageControls: fc2436c93e79419521a6de5d46d84722593e2949
   SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
 
-PODFILE CHECKSUM: 450d454280f83febf75fe48620b9006c775a52b6
+PODFILE CHECKSUM: dec2272635cda45865e7115b3ca13c2ac229e504
 
 COCOAPODS: 1.9.3

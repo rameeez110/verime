@@ -29,10 +29,8 @@ class ProfileViewController: UIViewController {
 }
 extension ProfileViewController {
     func setupUI() {
-        self.tabBarController?.title = "Profile"
-        self.tabBarController?.navigationItem.hidesBackButton = true
-        self.navigationController?.navigationBar.isHidden = true
-        self.tabBarController?.navigationController?.navigationBar.isHidden = false
+        self.title = "Profile"
+        self.navigationController?.navigationBar.isHidden = false
         
         let btn1 = UIButton(type: .custom)
         btn1.setImage(UIImage(named: "menu_button_black"), for: .normal)
@@ -40,7 +38,7 @@ extension ProfileViewController {
         btn1.addTarget(self, action: #selector(self.didTapSideMenu), for: .touchUpInside)
         let item1 = UIBarButtonItem(customView: btn1)
         
-        self.tabBarController?.navigationItem.leftBarButtonItem = item1
+        self.navigationItem.leftBarButtonItem = item1
         
         DispatchQueue.main.async {
             self.view.layoutIfNeeded()

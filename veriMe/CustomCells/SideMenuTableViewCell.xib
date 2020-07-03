@@ -22,16 +22,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CBE-1x-RZe">
-                        <rect key="frame" x="45" y="15" width="230" height="14"/>
+                        <rect key="frame" x="45" y="15" width="255" height="14"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oya-Rw-YKc">
-                                <rect key="frame" x="0.0" y="0.0" width="220" height="14"/>
+                                <rect key="frame" x="0.0" y="0.0" width="245" height="14"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cross_icon" translatesAutoresizingMaskIntoConstraints="NO" id="oPP-z9-LIt">
-                                <rect key="frame" x="220" y="2" width="10" height="10"/>
+                                <rect key="frame" x="245" y="2" width="10" height="10"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="10" id="M5j-xI-hsv"/>
                                     <constraint firstAttribute="height" constant="10" id="Nmh-yK-Kyw"/>
@@ -42,7 +42,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="CBE-1x-RZe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="1XB-d1-qQR"/>
-                    <constraint firstAttribute="trailing" secondItem="CBE-1x-RZe" secondAttribute="trailing" constant="45" id="CVa-SG-Gts"/>
+                    <constraint firstAttribute="trailing" secondItem="CBE-1x-RZe" secondAttribute="trailing" constant="20" id="CVa-SG-Gts"/>
                     <constraint firstItem="CBE-1x-RZe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="45" id="tV9-tG-YtK"/>
                     <constraint firstAttribute="bottom" secondItem="CBE-1x-RZe" secondAttribute="bottom" constant="15" id="vIT-G5-wIX"/>
                 </constraints>

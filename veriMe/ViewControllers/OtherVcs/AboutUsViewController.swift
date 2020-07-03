@@ -25,10 +25,8 @@ extension AboutUsViewController {
     func setupUI() {
         self.webView.load(URLRequest.init(url: URL.init(string: "http://actice.io/termsandconditions")!))
         
-        self.tabBarController?.title = "About Us"
-        self.tabBarController?.navigationItem.hidesBackButton = true
-        self.navigationController?.navigationBar.isHidden = true
-        self.tabBarController?.navigationController?.navigationBar.isHidden = false
+        self.title = "About Us"
+        self.navigationController?.navigationBar.isHidden = false
         
         let btn1 = UIButton(type: .custom)
         btn1.setImage(UIImage(named: "back_button_black"), for: .normal)
@@ -36,7 +34,7 @@ extension AboutUsViewController {
         btn1.addTarget(self, action: #selector(self.didTapSideMenu), for: .touchUpInside)
         let item1 = UIBarButtonItem(customView: btn1)
         
-        self.tabBarController?.navigationItem.leftBarButtonItem = item1
+        self.navigationItem.leftBarButtonItem = item1
     }
     
     @objc func didTapSideMenu(){

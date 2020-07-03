@@ -9,6 +9,8 @@ target 'veriMe' do
 
   pod 'SDWebImage'
   pod 'IQKeyboardManagerSwift'
+  pod "PageControls"
+  pod 'BetterSegmentedControl'
 
   target 'veriMeTests' do
     inherit! :search_paths

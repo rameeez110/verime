@@ -82,7 +82,7 @@ extension SceneDelegate {
         let navVC = UINavigationController(rootViewController:tabBarController)
         navVC.view.frame = UIScreen.main.bounds
         navVC.navigationBar.isHidden = false
-        self.window?.rootViewController = navVC
+        self.window?.rootViewController = tabBarController
     }
 }
 
